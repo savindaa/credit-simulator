@@ -11,6 +11,6 @@ public class InputCreditAmountView implements IActionView {
 
     @Override
     public void renderError(Exception e) {
-        System.out.printf("%sJumlah Pinjaman Tidak Valid: %s%s", ViewTextColor.RED, e.getMessage(), ViewTextColor.RESET);
+        System.out.printf("%sJumlah Pinjaman Tidak Valid: %s%s\n", ViewTextColor.RED, e.getMessage(), ViewTextColor.RESET);
     }
 }

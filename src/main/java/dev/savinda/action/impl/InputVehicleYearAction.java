@@ -29,5 +29,7 @@ public class InputVehicleYearAction implements IAction {
         if (request.getVehicleCondition().equals(VehicleCondition.NEW) && year < currentYear) {
             throw new IllegalArgumentException("Tahun kendaraan baru tidak boleh memiliki tahun sebelum tahun ini");
         }
+
+        request.setVehicleYear(year);
     }
 }

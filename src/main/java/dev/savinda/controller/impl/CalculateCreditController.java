@@ -56,7 +56,7 @@ public class CalculateCreditController implements IMenuController {
         List<CalculatorResultDto> results = calculator.calculate(request);
 
         CalculatorResultView resultView = new CalculatorResultView();
-        resultView.render(results);
+        resultView.render(this.request, results);
 
         return false;
     }

@@ -11,6 +11,7 @@ public class CalculatorRequestDto {
     private BigDecimal amount;
     private Integer tenor;
     private Double downPaymentRate;
+    private Integer vehicleYear;
 
     public CalculatorRequestDto() {
     }
@@ -53,5 +54,13 @@ public class CalculatorRequestDto {
 
     public void setVehicleCondition(VehicleCondition vehicleCondition) {
         this.vehicleCondition = vehicleCondition;
+    }
+
+    public Integer getVehicleYear() {
+        return vehicleYear;
+    }
+
+    public void setVehicleYear(Integer vehicleYear) {
+        this.vehicleYear = vehicleYear;
     }
 }
